@@ -1,0 +1,45 @@
+
+
+body
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url("img/bg_codeimage.jpg");
+}
+
+.navbar
+{
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#bodyLearnMore
+{
+    border: solid;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+#jumbotron
+{
+    background-color: #ffffff;
+}
+
+#header_img
+{
+    margin-right: 15px;
+}
+
+#header_name
+{
+    font-size: 20px;
+    margin-right: 10px;
+    color: rgba(0, 0, 0, 0.97);
+}
+
+#header_navbar
+{
+    background-color: #ffffff;
+}
+
