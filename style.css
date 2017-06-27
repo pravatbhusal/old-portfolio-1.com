@@ -4,16 +4,17 @@ body
 {
     padding-top: 20px;
     padding-bottom: 20px;
-	background-image: url("img/bg_white.jpg");
+    background-image: url("img/bg_white.jpg");
 }
 
-@media (max-width: 1000px) {
-.navbar
+@media (max-width: 1000px)
 {
-    margin-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0);
-	display: none;
-}
+    .navbar
+    {
+        margin-bottom: 20px;
+        background-color: rgba(0, 0, 0, 0);
+        display: none;
+    }
 }
 
 #bodyLearnMore
@@ -50,10 +51,29 @@ body
 {
     background-color: rgba(255, 255, 255, 0);
     color: black;
+    margin-top: 25px;
 }
 
 #app_img
 {
     margin-right: 10px;
+}
+
+#contact_formTags
+{
+    margin-top: 25px;
+}
+
+#contact_inputText
+{
+    margin-bottom: 25px;
+    padding: 20px;
+    width: 750px;
+}
+
+#formInput364
+{
+    padding-bottom: 100px;
+    width: 750px;
 }
 
