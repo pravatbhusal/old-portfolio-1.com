@@ -11,7 +11,7 @@
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/animations.css">
+        <link rel="stylesheet" href="assets/css/animations.css">
         <!-- Custom styles for this template -->
         <link href="style.css" rel="stylesheet">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -61,23 +61,22 @@
                 </div>
                 <!--/.container-fluid -->
             </nav>
-            <form>
+            <form action="server/php/sendEmail.php" method="post" id="contactForm" onsubmit="alert('Email has been sent to Pravat Bhusal. \nThank you for contacting me, I will reply as soon as possible!');">
                 <h4><b><h4></h4></b><p id="contact_formTags">Your name*</p></h4>
-                <input type="text" class="form-control" placeholder="eg. Pravat Bhusal" required="" id="contact_inputText">
+                <input type="text" name="name" class="form-control name" placeholder="eg. Pravat Bhusal" required="" id="contact_inputText">
                 <h4>Email Address*</h4>
-                <input type="text" class="form-control" placeholder="eg. pravat.bhusal@gmail.com" id="contact_inputText" required="">
+                <input type="email" name="email" class="form-control email" placeholder="eg. pravat.bhusal@gmail.com" id="contact_inputText" required="">
                 <h4>Your Website</h4>
-                <input type="text" class="form-control" placeholder="eg. google.com" id="contact_inputText">
+                <input type="text" name="website" class="form-control" placeholder="eg. google.com" id="contact_inputText">
                 <div class="form-group"> 
                     <label class="control-label" for="formInput364">
                         <h4>Message*</h4>
                     </label>                     
-                    <textarea class="form-control" rows="3" id="formInput364"></textarea>
+                    <textarea name="message" class="form-control message" rows="3" id="formInput364" required=""></textarea>
                 </div>
 				<!--TODO: Implement the Google Captcha API to prevent spammers-->
-                <a class="btn btn-lg btn-primary disabled" type="submit" role="button">Submit</a>
-                <span><b>Notice: Sending e-mails has been disabled for the time-being. Please send e-mails to pravat.bhusal@gmail.com.</b></span>
             </form>
+			<button class="btn btn-lg btn-primary" id="submitBTN" type="submit" form="contactForm" value="Submit">Submit</button>
             <p id="copyright">© 2017 Pravat Bhusal. All rights reserved.</p>
         </div>         
         <!-- /container -->
