@@ -25,31 +25,42 @@
     <body>
         <div class="container">
             <!-- Static navbar -->
-            <nav class="navbar navbar-default">
-                <div class="container-fluid" id="header_navbar">
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="active"></li>
+            <nav class="navbar navbar-default" role="navigation"> 
+                <div class="container-fluid"> 
+                    <div class="navbar-header"> 
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+                            <span class="sr-only">Toggle navigation</span> 
+                            <span class="icon-bar"></span> 
+                            <span class="icon-bar"></span> 
+                            <span class="icon-bar"></span> 
+                        </button>                         
+                         <a href="index.html">
+                         <a class="navbar-brand" href="index.html"><b data-bs-hover-animate="flash" id="header_name">Pravat Bhusal</b></a></a>
+                    </div>                     
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+                        <ul class="nav navbar-nav">                             
+                            <li class="dropdown">                                  
+                                <ul class="dropdown-menu"> 
+                                    <li> 
+                                        <a href="#">Action</a> 
+                                    </li>                                     
+                                    <li> 
+                                        <a href="#">Another action</a> 
+                                    </li>                                     
+                                    <li> 
+                                        <a href="#">Something else here</a> 
+                                    </li>                                     
+                                    <li class="divider"></li>                                     
+                                    <li> 
+                                        <a href="#">Separated link</a> 
+                                    </li>                                     
+                                    <li class="divider"></li>                                     
+                                    <li> 
+                                        <a href="#">One more separated link</a> 
+                                    </li>                                     
+                                </ul>                                 
+                            </li>                             
                         </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="index.html">About</a>
-                            </li>
-                            <li class="active">
-                                <a href="projects.html">Projects</a>
-                            </li>
-                            <li>
-                                <a href="blog.html">Blog</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                        <span><a class="navbar-brand">
-                                <a href="index.html">
-                                    <a class="navbar-brand" href="index.html"><b data-bs-hover-animate="flash" id="header_name">Pravat Bhusal</b></a>
-                                </a>
-                            </a></span>
                         <a target="_blank" href="https://github.com/Shadowsych">
                             <img data-bs-hover-animate="tada" src="img/github.png" class="img-circle" height="45" id="header_img" width="50" /></a>
                         <a target="_blank" href="https://www.instagram.com/pravatbhusal/">
@@ -61,11 +72,40 @@
                         <a target="_blank" href="https://twitter.com/Shadowsych">
                             <img data-bs-hover-animate="tada" src="img/twitter.png" class="img-circle" id="header_img" height="50" width="50" /></a>
                         <a target="_blank" href="https://www.youtube.com/channel/UCu7WLLtJlylCIOUorMWG95Q">
-                            <img data-bs-hover-animate="tada" src="img/youtube.png" class="img-circle" id="header_img" width="45" height="45" /></a>
-                    </div>
-                    <!--/.nav-collapse -->
-                </div>
-                <!--/.container-fluid -->
+                            <img data-bs-hover-animate="tada" src="img/youtube.png" class="img-circle" id="header_img" width="45" height="45" /></a>						
+                        <ul class="nav navbar-nav navbar-right"> 
+                            <li>
+                                <a href="index.html">About</a>
+                            </li>
+                            <li  class="active">
+                                <a href="projects.html">Projects</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>                            
+                            <li class="dropdown">                                  
+                                <ul class="dropdown-menu"> 
+                                    <li> 
+                                        <a href="#">Action</a> 
+                                    </li>                                     
+                                    <li> 
+                                        <a href="#">Another action</a> 
+                                    </li>                                     
+                                    <li> 
+                                        <a href="#">Something else here</a> 
+                                    </li>                                     
+                                    <li class="divider"></li>                                     
+                                    <li> 
+                                        <a href="#">Separated link</a> 
+                                    </li>                                     
+                                </ul>                                 
+                            </li>                             
+                        </ul>                         
+                    </div>                     
+                </div>                 
             </nav>
             <p id="copyright">© 2017 Pravat Bhusal. All rights reserved.</p>
         </div>         
