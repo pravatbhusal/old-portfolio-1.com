@@ -61,15 +61,19 @@
                             <img data-bs-hover-animate="tada" src="img/github.png" class="img-circle" height="45" id="header_img" width="50" /></a>
                         <a target="_blank" href="https://www.instagram.com/pravatbhusal/">
                             <img data-bs-hover-animate="tada" src="img/instagram.jpg" class="img-circle" height="45" id="header_img" width="50" /></a>
-                        <a target="_blank" href="https://plus.google.com/u/0/109962661380975274950">
-                            <img data-bs-hover-animate="tada" src="img/googleplus.png" width="50" class="img-circle" height="45" id="header_img" /></a>
                         <a target="_blank" href="https://www.linkedin.com/in/pravat-bhusal-b8788bb8">
                             <img data-bs-hover-animate="tada" src="img/linkedin.png" width="50" class="img-circle" height="45" id="header_img" /></a>
                         <a target="_blank" href="https://twitter.com/Shadowsych">
                             <img data-bs-hover-animate="tada" src="img/twitter.png" class="img-circle" id="header_img" height="50" width="50" /></a>
+						<a target="_blank" href="https://devpost.com/Shadowsych">
+                            <img data-bs-hover-animate="tada" src="img/devpost.png" class="img-circle" id="header_img" width="45" height="45" /></a>
+						<a target="_blank" href="https://www.facebook.com/pravat.bhusal">
+                            <img data-bs-hover-animate="tada" src="img/facebook.png" class="img-circle" id="header_img" width="45" height="45" /></a>
                         <a target="_blank" href="https://www.youtube.com/channel/UCu7WLLtJlylCIOUorMWG95Q">
-                            <img data-bs-hover-animate="tada" src="img/youtube.png" class="img-circle" id="header_img" width="45" height="45" /></a>						
-                        <ul class="nav navbar-nav navbar-right"> 
+                            <img data-bs-hover-animate="tada" src="img/youtube.png" class="img-circle" id="header_img" width="45" height="45" /></a>
+                        <a target="_blank" href="https://plus.google.com/u/0/109962661380975274950">
+                            <img data-bs-hover-animate="tada" src="img/googleplus.png" width="50" class="img-circle" height="45" id="header_img" /></a>							
+                        <ul class="nav navbar-nav navbar-right">  
                             <li>
                                 <a href="index.html">About</a>
                             </li>
@@ -103,7 +107,7 @@
                     </div>                     
                 </div>                 
             </nav>
-            <form action="server/php/sendEmail.php" method="post" id="contactForm" onsubmit="alert('Thank you for contacting me, I will reply as soon as possible!');">
+            <form class="animated fadeIn" action="server/php/sendEmail.php" method="post" id="contactForm" onsubmit="alert('Thank you for contacting me, I will reply as soon as possible!');">
                 <h4><b><h4></h4></b><p id="contact_formTags">Your Name<span style="color:red">*</span></p></h4>
                 <input type="text" name="name" class="form-control name" placeholder="eg. Pravat Bhusal" required="" id="contact_inputText">
                 <h4>Email Address<span style="color:red">*</span></h4>
@@ -118,7 +122,7 @@
                 </div>
 				<!--TODO: Implement the Google Captcha API to prevent spammers-->
             </form>
-			<button class="btn btn-lg btn-primary" id="submitBTN" type="submit" form="contactForm" value="Submit">Submit</button>
+			<button class="animated fadeIn btn btn-lg btn-primary" id="submitBTN" type="submit" form="contactForm" value="Submit">Submit</button>
             <p id="copyright">© 2017 Pravat Bhusal. All rights reserved.</p>
         </div>         
         <!-- /container -->
