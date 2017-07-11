@@ -2,14 +2,13 @@
 
 body
 {
-    padding-top: 20px;
+    padding-top: 60px;
     padding-bottom: 20px;
     background-image: url("img/bg_white.jpg");
 }
 
 .navbar
 {
-        margin-bottom: 20px;
         background-color: white;
 }
 

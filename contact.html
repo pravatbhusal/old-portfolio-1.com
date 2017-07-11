@@ -19,9 +19,8 @@
         <link rel="shortcut icon" href="favcon.ico" type="image/x-icon">         
     </head>
     <body>
-        <div class="container">
             <!-- Static navbar -->
-            <nav class="navbar navbar-default" role="navigation"> 
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation"> 
                 <div class="container-fluid"> 
                     <div class="navbar-header"> 
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
@@ -107,6 +106,8 @@
                     </div>                     
                 </div>                 
             </nav>
+			
+			<div class="container"> 
             <form class="animated fadeIn" action="server/php/sendEmail.php" method="post" id="contactForm" onsubmit="alert('Thank you for contacting me, I will reply as soon as possible!');">
                 <h4><b><h4></h4></b><p id="contact_formTags">Your Name<span style="color:red">*</span></p></h4>
                 <input type="text" name="name" class="form-control name" placeholder="eg. Pravat Bhusal" required="" id="contact_inputText">
