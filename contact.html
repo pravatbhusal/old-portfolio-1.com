@@ -1,139 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> 
-        <meta charset="utf-8"> 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        <meta name="description" content=""> 
-        <meta name="author" content=""> 
-        <title>Pravat Bhusal</title>    
-		
-        <!-- Bootstrap core CSS -->         
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> 
-		
-        <!-- Custom styles for this template -->         
-        <link href="style.css" rel="stylesheet"> 
-		
-        <!--Favicon-->         
-        <link rel="shortcut icon" href="favcon.ico" type="image/x-icon">         
-    </head>
-    <body style="padding-top: 40px">
-            <!-- Static navbar -->
-            <nav class="navbar navbar-default navbar-fixed-top" role="navigation"> 
-                <div class="container-fluid"> 
-                    <div class="navbar-header"> 
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
-                            <span class="sr-only">Toggle navigation</span> 
-                            <span class="icon-bar"></span> 
-                            <span class="icon-bar"></span> 
-                            <span class="icon-bar"></span> 
-                        </button>                         
-                         <a href="index.html">
-                         <a class="navbar-brand" href="index.html"><b data-bs-hover-animate="flash" id="header_name">Pravat Bhusal</b></a></a>
-                    </div>                     
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
-                        <ul class="nav navbar-nav">                             
-                            <li class="dropdown">                                  
-                                <ul class="dropdown-menu"> 
-                                    <li> 
-                                        <a href="#">Action</a> 
-                                    </li>                                     
-                                    <li> 
-                                        <a href="#">Another action</a> 
-                                    </li>                                     
-                                    <li> 
-                                        <a href="#">Something else here</a> 
-                                    </li>                                     
-                                    <li class="divider"></li>                                     
-                                    <li> 
-                                        <a href="#">Separated link</a> 
-                                    </li>                                     
-                                    <li class="divider"></li>                                     
-                                    <li> 
-                                        <a href="#">One more separated link</a> 
-                                    </li>                                     
-                                </ul>                                 
-                            </li>                             
-                        </ul>
-                        <a target="_blank" href="https://github.com/Shadowsych">
-                            <img data-bs-hover-animate="tada" src="img/github.png" class="img-circle" height="35" id="header_img" width="40" /></a>
-                        <a target="_blank" href="https://www.instagram.com/pravatbhusal/">
-                            <img data-bs-hover-animate="tada" src="img/instagram.jpg" class="img-circle" height="35" id="header_img" width="40" /></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/pravat-bhusal-b8788bb8">
-                            <img data-bs-hover-animate="tada" src="img/linkedin.png" width="40" class="img-circle" height="35" id="header_img" /></a>
-                        <a target="_blank" href="https://twitter.com/Shadowsych">
-                            <img data-bs-hover-animate="tada" src="img/twitter.png" class="img-circle" id="header_img" height="35" width="40" /></a>
-						<a target="_blank" href="https://devpost.com/Shadowsych">
-                            <img data-bs-hover-animate="tada" src="img/devpost.png" class="img-circle" id="header_img" width="40" height="35" /></a>
-						<a target="_blank" href="https://www.facebook.com/pravat.bhusal">
-                            <img data-bs-hover-animate="tada" src="img/facebook.png" class="img-circle" id="header_img" width="40" height="35" /></a>
-                        <a target="_blank" href="https://www.youtube.com/channel/UCu7WLLtJlylCIOUorMWG95Q">
-                            <img data-bs-hover-animate="tada" src="img/youtube.png" class="img-circle" id="header_img" width="40" height="35" /></a>
-                        <a target="_blank" href="https://plus.google.com/u/0/109962661380975274950">
-                            <img data-bs-hover-animate="tada" src="img/googleplus.png" width="40" class="img-circle" height="35" id="header_img" /></a>							
-                        <ul class="nav navbar-nav navbar-right">   
-                            <li>
-                                <a href="index.html">About</a>
-                            </li>
-                            <li>
-                                <a href="projects.html">Projects</a>
-                            </li>
-                            <li>
-                                <a href="blog.html">Blog</a>
-                            </li>
-                            <li  class="active">
-                                <a href="contact.html">Contact</a>
-                            </li>                            
-                            <li class="dropdown">                                  
-                                <ul class="dropdown-menu"> 
-                                    <li> 
-                                        <a href="#">Action</a> 
-                                    </li>                                     
-                                    <li> 
-                                        <a href="#">Another action</a> 
-                                    </li>                                     
-                                    <li> 
-                                        <a href="#">Something else here</a> 
-                                    </li>                                     
-                                    <li class="divider"></li>                                     
-                                    <li> 
-                                        <a href="#">Separated link</a> 
-                                    </li>                                     
-                                </ul>                                 
-                            </li>                             
-                        </ul>                         
-                    </div>                     
-                </div>                 
-            </nav>
-			
-			<div class="container"> 
-            <form class="animated fadeIn" action="server/php/sendEmail.php" method="post" id="contactForm" onsubmit="alert('Thank you for contacting me, I will reply as soon as possible!');">
-                <h4><b><h4></h4></b><p id="contact_formTags">Your Name<span style="color:red">*</span></p></h4>
-                <input type="text" name="name" class="form-control name" placeholder="eg. Pravat Bhusal" required="" id="contact_inputText">
-                <h4>Email Address<span style="color:red">*</span></h4>
-                <input type="email" name="email" class="form-control email" placeholder="eg. pravat.bhusal@gmail.com" id="contact_inputText" required="">
-                <h4>Your Website</h4>
-                <input type="text" name="website" class="form-control" placeholder="eg. google.com" id="contact_inputText">
-                <div class="form-group"> 
-                    <label class="control-label" for="formInput364">
-                        <h4>Message<span style="color:red">*</span></h4>
-                    </label>                     
-                    <textarea name="message" class="form-control message" rows="3" id="formInput364" required=""></textarea>
-                </div>
-				<!--TODO: Implement the Google Captcha API to prevent spammers-->
-            </form>
-			<button class="animated fadeIn btn btn-lg btn-primary" id="submitBTN" type="submit" form="contactForm" value="Submit">Submit</button>
-            <p id="copyright">© 2017 Pravat Bhusal. All rights reserved.</p>
-        </div>         
-        <!-- /container -->
-		
-    <!--================================================== -->         
-        <!-- Placed at the end of the document so the pages load faster-->         
-        <script src="assets/js/jquery.min.js"></script>         
-        <script src="assets/js/bs-animation.js"></script>         
-		<script src="bootstrap/js/bootstrap.js"></script>			
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->         
-        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>  
-    </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Pravat Bhusal</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favcon.ico" type="image/x-icon">
+</head>
+
+<body style="padding-top: 40px">
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html">
+          <a class="navbar-brand" href="index.html"><b data-bs-hover-animate="flash" id="header_name">Pravat Bhusal</b></a></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">Action</a>
+              </li>
+              <li>
+                <a href="#">Another action</a>
+              </li>
+              <li>
+                <a href="#">Something else here</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="#">Separated link</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="#">One more separated link</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <a target="_blank" href="https://github.com/Shadowsych">
+          <img data-bs-hover-animate="tada" src="img/github.png" class="img-circle" height="35" id="header_img" width="40" /></a>
+        <a target="_blank" href="https://www.instagram.com/pravatbhusal/">
+          <img data-bs-hover-animate="tada" src="img/instagram.jpg" class="img-circle" height="35" id="header_img" width="40" /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/pravat-bhusal-b8788bb8">
+          <img data-bs-hover-animate="tada" src="img/linkedin.png" width="40" class="img-circle" height="35" id="header_img" /></a>
+        <a target="_blank" href="https://twitter.com/Shadowsych">
+          <img data-bs-hover-animate="tada" src="img/twitter.png" class="img-circle" id="header_img" height="35" width="40" /></a>
+        <a target="_blank" href="https://devpost.com/Shadowsych">
+          <img data-bs-hover-animate="tada" src="img/devpost.png" class="img-circle" id="header_img" width="40" height="35" /></a>
+        <a target="_blank" href="https://www.facebook.com/pravat.bhusal">
+          <img data-bs-hover-animate="tada" src="img/facebook.png" class="img-circle" id="header_img" width="40" height="35" /></a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCu7WLLtJlylCIOUorMWG95Q">
+          <img data-bs-hover-animate="tada" src="img/youtube.png" class="img-circle" id="header_img" width="40" height="35" /></a>
+        <a target="_blank" href="https://plus.google.com/u/0/109962661380975274950">
+          <img data-bs-hover-animate="tada" src="img/googleplus.png" width="40" class="img-circle" height="35" id="header_img" /></a>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="index.html">About</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li class="active">
+            <a href="contact.html">Contact</a>
+          </li>
+          <li class="dropdown">
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">Action</a>
+              </li>
+              <li>
+                <a href="#">Another action</a>
+              </li>
+              <li>
+                <a href="#">Something else here</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="#">Separated link</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <form class="animated fadeIn" action="server/php/sendEmail.php" method="post" id="contactForm" onsubmit="alert('Thank you for contacting me, I will reply as soon as possible!');">
+      <h4><b>
+          <h4></h4>
+        </b>
+        <p id="contact_formTags">Your Name<span style="color:red">*</span></p>
+      </h4>
+      <input type="text" name="name" class="form-control name" placeholder="eg. Pravat Bhusal" required="" id="contact_inputText">
+      <h4>Email Address<span style="color:red">*</span></h4>
+      <input type="email" name="email" class="form-control email" placeholder="eg. pravat.bhusal@gmail.com" id="contact_inputText" required="">
+      <h4>Your Website</h4>
+      <input type="text" name="website" class="form-control" placeholder="eg. google.com" id="contact_inputText">
+      <div class="form-group">
+        <label class="control-label" for="formInput364">
+          <h4>Message<span style="color:red">*</span></h4>
+        </label>
+        <textarea name="message" class="form-control message" rows="3" id="formInput364" required=""></textarea>
+      </div>
+      <!--TODO: Implement the Google Captcha API to prevent spammers-->
+    </form>
+    <button class="animated fadeIn btn btn-lg btn-primary" id="submitBTN" type="submit" form="contactForm" value="Submit">Submit</button>
+    <p id="copyright">© 2017 Pravat Bhusal. All rights reserved.</p>
+  </div>
+  <!-- /container -->
+
+  <!--================================================== -->
+  <!-- Placed at the end of the document so the pages load faster-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bs-animation.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
 </html>

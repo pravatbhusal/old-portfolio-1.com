@@ -1,98 +1,82 @@
-
-
-body
-{
-    padding-top: 60px;
-    padding-bottom: 20px;
-    background-image: url("img/bg_white.jpg");
+body {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  background-image: url("img/bg_white.jpg");
 }
 
-.navbar
-{
-        background-color: white;
+.navbar {
+  background-color: white;
 }
 
-#bodyLearnMore
-{
-    border: solid;
-    border-radius: 10px;
-    text-decoration: none;
-    margin-top: 10px;
+#bodyLearnMore {
+  border: solid;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 10px;
 }
 
-#jumbotron
-{
-    background-color: #ffffff;
+#jumbotron {
+  background-color: #ffffff;
 }
 
-#header_img
-{
-    margin-right: 7px;
-	margin-top: 7px;
+#header_img {
+  margin-right: 7px;
+  margin-top: 7px;
 }
 
-#header_name
-{
-    font-size: 20px;
-    margin-right: 10px;
-    color: rgba(0, 0, 0, 0.97);
+#header_name {
+  font-size: 20px;
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.97);
 }
 
-#header_navbar
-{
-    background-color: #ffffff;
+#header_navbar {
+  background-color: #ffffff;
 }
 
-#copyright
-{
-    background-color: rgba(255, 255, 255, 0);
-    color: black;
-    margin-top: 25px;
+#copyright {
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  margin-top: 25px;
 }
 
-#app_img
-{
-    margin-right: 10px;
+#app_img {
+  margin-right: 10px;
 }
 
-#contact_formTags
-{
-    margin-top: 25px;
+#contact_formTags {
+  margin-top: 25px;
 }
 
-#contact_inputText
-{
-    margin-bottom: 25px;
-    padding: 20px;
-    width: 750px;
+#contact_inputText {
+  margin-bottom: 25px;
+  padding: 20px;
+  width: 750px;
 }
 
 @media only screen and (max-width: 768px) {
-#contact_inputText
-{
+  #contact_inputText {
     margin-bottom: 25px;
     padding: 20px;
     width: 420px;
-}
+  }
 }
 
-#formInput364
-{
-    padding-bottom: 100px;
-    width: 750px;
+#formInput364 {
+  padding-bottom: 100px;
+  width: 750px;
 }
 
 @media only screen and (max-width: 768px) {
-#formInput364
-{
+  #formInput364 {
     padding-bottom: 100px;
     width: 420px;
-}
+  }
 }
 
 #project_pic {
-   width: auto;
-   max-height: 100%;
-   border-radius: 10px;
-   margin-top: 10px;
+  width: auto;
+  max-height: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
 }
